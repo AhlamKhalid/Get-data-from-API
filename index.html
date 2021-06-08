@@ -5,9 +5,71 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Get data from API</title>
+    <!-- google font -->
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <!-- css -->
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
+    <div class="container">
+      <h1 class="header">
+        <a href="https://restcountries.eu/" target="_blank">Countries API</a>
+      </h1>
+      <!-- radio -->
+      <div class="radio-wrapper">
+        <h2 class="radio-header">Region</h2>
+        <div class="radio-container">
+          <input
+            id="rb1"
+            type="radio"
+            name="region"
+            value="all"
+            class="radio-input"
+            checked="checked"
+          />
+          <label for="rb1" class="radio-label"> All </label>
+        </div>
+        <div class="radio-container">
+          <input
+            id="rb2"
+            type="radio"
+            name="region"
+            value="asia"
+            class="radio-input"
+          />
+          <label for="rb2" class="radio-label"> Asia </label>
+        </div>
+        <div class="radio-container">
+          <input
+            id="rb3"
+            type="radio"
+            name="region"
+            value="africa"
+            class="radio-input"
+          />
+          <label for="rb3" class="radio-label"> Africa </label>
+        </div>
+        <div class="radio-container">
+          <input
+            id="rb4"
+            type="radio"
+            name="region"
+            value="europe"
+            class="radio-input"
+          />
+          <label for="rb4" class="radio-label"> Europe </label>
+        </div>
+      </div>
+      <!-- countries -->
+      <div id="countries-container" class="countries-container"></div>
+    </div>
+    <!-- axios -->
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <!-- js -->
     <script src="./main.js"></script>
   </body>
 </html>
